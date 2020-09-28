@@ -1,0 +1,143 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-plain table-plain-bg">
+                <div class="card-header ">
+                    <h4 class="card-title">Brainly User Table</h4>
+                </div>
+                <div style="overflow-x:auto; overflow-y: auto; height: 800px;"
+                    class="card-body table-full-width table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <th scope="col">url</th>
+                            <th scope="col">nama_pengguna</th>
+                            <th scope="col">title</th>
+                            <th scope="col">pertanyaan</th>
+                            <th scope="col">teman</th>
+                            <th scope="col">total jawaban</th>
+                            <th scope="col">total tercerdas</th>
+                            <th scope="col">terimakasih</th>
+                            <th scope="col">total_tercerdas_matematika</th>
+                            <th scope="col">total_tercerdas_ppkn</th>
+                            <th scope="col">total_tercerdas_ips</th>w
+                            <th scope="col">total_tercerdas_biologi</th>
+                            <th scope="col">total_tercerdas_fisika</th>
+                            <th scope="col">total_tercerdas_sejarah</th>
+                            <th scope="col">total_tercerdas_binggris</th>
+                            <th scope="col">total_tercerdas_seni</th>
+                            <th scope="col">total_tercerdas_kimia</th>
+                            <th scope="col">total_tercerdas_geografi</th>
+                            <th scope="col">total_tercerdas_ti</th>
+                            <th scope="col">total_tercerdas_ekonomi</th>
+                            <th scope="col">total_tercerdas_barab</th>
+                            <th scope="col">total_tercerdas_daerah</th>
+                            <th scope="col">total_tercerdas_penjaskes</th>
+                            <th scope="col">total_tercerdas_sosiologi</th>
+                            <th scope="col">total_tercerdas_blain</th>
+                            <th scope="col">total_tercerdas_wirausaha</th>
+                            <th scope="col">total_tercerdas_akuntansi</th>
+                            <th scope="col">total_tercerdas_bjepang</th>
+                            <th scope="col">total_tercerdas_bmandarin</th>
+                            <th scope="col">total_tercerdas_bperancis</th>
+                            <th scope="col">total_jawaban_matematika </th>
+                            <th scope="col">total_jawaban_ppkn </th>
+                            <th scope="col">total_jawaban_ips </th>
+                            <th scope="col">total_jawaban_biologi </th>
+                            <th scope="col">total_jawaban_fisika </th>
+                            <th scope="col">total_jawaban_sejarah </th>
+                            <th scope="col">total_jawaban_binggris </th>
+                            <th scope="col">total_jawaban_kimia </th>
+                            <th scope="col">total_jawaban_geografi </th>
+                            <th scope="col">total_jawaban_ti </th>
+                            <th scope="col">total_jawaban_ekonomi </th>
+                            <th scope="col">total_jawaban_barab </th>
+                            <th scope="col">total_jawaban_bdaerah </th>
+                            <th scope="col">total_jawaban_penjaskes </th>
+                            <th scope="col">total_jawaban_sosiologi </th>
+                            <th scope="col">total_jawaban_blain </th>
+                            <th scope="col">total_jawaban_wirausaha </th>
+                            <th scope="col">total_jawaban_akuntasi </th>
+                            <th scope="col">total_jawaban_bjepang </th>
+                            <th scope="col">total_jawaban_bmandarin </th>
+                            <th scope="col">total_jawaban_bperancis </th>
+                            <th scope="col">total_jawaban_bindonesia </th>
+                            <th scope="col">total_tercerdas_bindonesia </th>
+                            <th scope="col">total_jawaban_sbmptn</th>
+                            <th scope="col">total_tercerdas_sbmptn</th>
+                            <th scope="col">poin</th>
+                            <th scope="col">tingkat</th>
+                            <th scope="col">bergabung</th>
+                        </thead>
+                        {% for data in datas %}
+                        <tbody>
+                            <tr>
+                                <td>{{ data['url'] }}</td>
+                                <td>{{ data['nama_pengguna'] }}</td>
+                                <td>{{ data['title'] }}</td>
+                                <td>{{ data['pertanyaan'] }}</td>
+                                <td>{{ data['teman'] }}</td>
+                                <td>{{ data['total_jawaban'] }}</td>
+                                <td>{{ data['total_tercerdas'] }}</td>
+                                <td>{{ data['terima_kasih'] }}</td>
+                                <td>{{ data['total_tercerdas_matematika'] }}</td>
+                                <td>{{ data['total_tercerdas_ppkn'] }}</td>
+                                <td>{{ data['total_tercerdas_ips'] }}</td>
+                                <td>{{ data['total_tercerdas_biologi'] }}</td>
+                                <td>{{ data['total_tercerdas_fisika'] }}</td>
+                                <td>{{ data['total_tercerdas_sejarah'] }}</td>
+                                <td>{{ data['total_tercerdas_binggris'] }}</td>
+                                <td>{{ data['total_tercerdas_seni'] }}</td>
+                                <td>{{ data['total_tercerdas_kimia'] }}</td>
+                                <td>{{ data['total_tercerdas_geografi'] }}</td>
+                                <td>{{ data['total_tercerdas_ti'] }}</td>
+                                <td>{{ data['total_tercerdas_ekonomi'] }}</td>
+                                <td>{{ data['total_tercerdas_barab'] }}</td>
+                                <td>{{ data['total_tercerdas_daerah'] }}</td>
+                                <td>{{ data['total_tercerdas_penjaskes'] }}</td>
+                                <td>{{ data['total_tercerdas_sosiologi'] }}</td>
+                                <td>{{ data['total_tercerdas_blain'] }}</td>
+                                <td>{{ data['total_tercerdas_wirausaha'] }}</td>
+                                <td>{{ data['total_tercerdas_akuntansi'] }}</td>
+                                <td>{{ data['total_tercerdas_bjepang'] }}</td>
+                                <td>{{ data['total_tercerdas_bmandarin'] }}</td>
+                                <td>{{ data['total_tercerdas_bperancis'] }}</td>
+                                <td>{{ data['total_jawaban_matematika'] }}</td>
+                                <td>{{ data['total_jawaban_ppkn'] }}</td>
+                                <td>{{ data['total_jawaban_ips'] }}</td>
+                                <td>{{ data['total_jawaban_biologi'] }}</td>
+                                <td>{{ data['total_jawaban_fisika'] }}</td>
+                                <td>{{ data['total_jawaban_sejarah'] }}</td>
+                                <td>{{ data['total_jawaban_binggris'] }}</td>
+                                <td>{{ data['total_jawaban_kimia'] }}</td>
+                                <td>{{ data['total_jawaban_geografi'] }}</td>
+                                <td>{{ data['total_jawaban_ti'] }}</td>
+                                <td>{{ data['total_jawaban_ekonomi'] }}</td>
+                                <td>{{ data['total_jawaban_barab'] }}</td>
+                                <td>{{ data['total_jawaban_bdaerah'] }}</td>
+                                <td>{{ data['total_jawaban_penjaskes'] }}</td>
+                                <td>{{ data['total_jawaban_sosiologi'] }}</td>
+                                <td>{{ data['total_jawaban_blain'] }}</td>
+                                <td>{{ data['total_jawaban_wirausaha'] }}</td>
+                                <td>{{ data['total_jawaban_akuntasi'] }}</td>
+                                <td>{{ data['total_jawaban_bjepang'] }}</td>
+                                <td>{{ data['total_jawaban_bmandarin'] }}</td>
+                                <td>{{ data['total_jawaban_bperancis'] }}</td>
+                                <td>{{ data['total_jawaban_bindonesia'] }}</td>
+                                <td>{{ data['total_tercerdas_bindonesia'] }}</td>
+                                <td>{{ data['total_jawaban_sbmptn'] }}</td>
+                                <td>{{ data['total_tercerdas_sbmptn'] }}</td>
+                                <td>{{ data['poin'] }}</td>
+                                <td>{{ data['tingkat'] }}</td>
+                                <td>{{ data['bergabung'] }}</td>
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

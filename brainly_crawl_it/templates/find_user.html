@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="{{ url_for('result') }}" class="form-inline">
+  <div class="form-group mx-sm-3 mb-2">
+    <label>Insert URL: </label>
+    <input type="text" class="form-control" id="search-input" name="user_url" placeholder="Url">
+  </div>
+  <button role="button" type="submit" class="btn btn-primary mb-2">Search</button>
+</form>
+{% endblock %}

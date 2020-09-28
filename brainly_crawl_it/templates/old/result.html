@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for usr in content %}
+<div class="table-responsive">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">url</th>
+        <th scope="col">nama_pengguna</th>
+        <th scope="col">title</th>
+        <th scope="col">pertanyaan</th>
+        <th scope="col">teman</th>
+        <th scope="col">total jawaban</th>
+        <th scope="col">total tercerdas</th>
+        <th scope="col">terimakasih</th>
+        <th scope="col">total_tercerdas_matematika</th>
+        <th scope="col">total_tercerdas_ppkn</th>
+        <th scope="col">total_tercerdas_ips</th>
+        <th scope="col">total_tercerdas_biologi</th>
+        <th scope="col">total_tercerdas_fisika</th>
+        <th scope="col">total_tercerdas_sejarah</th>
+        <th scope="col">total_tercerdas_binggris</th>
+        <th scope="col">total_tercerdas_seni</th>
+        <th scope="col">total_tercerdas_kimia</th>
+        <th scope="col">total_tercerdas_geografi</th>
+        <th scope="col">total_tercerdas_ti</th>
+        <th scope="col">total_tercerdas_ekonomi</th>
+        <th scope="col">total_tercerdas_barab</th>
+        <th scope="col">total_tercerdas_daerah</th>
+        <th scope="col">total_tercerdas_penjaskes</th>
+        <th scope="col">total_tercerdas_sosiologi</th>
+        <th scope="col">total_tercerdas_blain</th>
+        <th scope="col">total_tercerdas_wirausaha</th>
+        <th scope="col">total_tercerdas_akuntansi</th>
+        <th scope="col">total_tercerdas_bjepang</th>
+        <th scope="col">total_tercerdas_bmandarin</th>
+        <th scope="col">total_tercerdas_bperancis</th>
+        <th scope="col">total_jawaban_matematika </th>
+        <th scope="col">total_jawaban_ppkn </th>
+        <th scope="col">total_jawaban_ips </th>
+        <th scope="col">total_jawaban_biologi </th>
+        <th scope="col">total_jawaban_fisika </th>
+        <th scope="col">total_jawaban_sejarah </th>
+        <th scope="col">total_jawaban_binggris </th>
+        <th scope="col">total_jawaban_kimia </th>
+        <th scope="col">total_jawaban_geografi </th>
+        <th scope="col">total_jawaban_ti </th>
+        <th scope="col">total_jawaban_ekonomi </th>
+        <th scope="col">total_jawaban_barab </th>
+        <th scope="col">total_jawaban_bdaerah </th>
+        <th scope="col">total_jawaban_penjaskes </th>
+        <th scope="col">total_jawaban_sosiologi </th>
+        <th scope="col">total_jawaban_blain </th>
+        <th scope="col">total_jawaban_wirausaha </th>
+        <th scope="col">total_jawaban_akuntasi </th>
+        <th scope="col">total_jawaban_bjepang </th>
+        <th scope="col">total_jawaban_bmandarin </th>
+        <th scope="col">total_jawaban_bperancis </th>
+        <th scope="col">total_jawaban_bindonesia </th>
+        <th scope="col">total_tercerdas_bindonesia </th>
+        <th scope="col">total_jawaban_sbmptn</th>
+        <th scope="col">total_tercerdas_sbmptn</th>
+        <th scope="col">poin</th>
+        <th scope="col">tingkat</th>
+        <th scope="col">bergabung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ usr['url'] }}</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>{{usr}}</p>
+{% endfor %}
+{% endblock %}
